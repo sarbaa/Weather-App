@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+
+        <!--SEARCH-->
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="error">
+            <p>Please enter a valid city name.</p>
+        </div>
+
+        <!--HEAD-->
+        <div class="weather"><!--MAIN-->
+            <img src="weatherpics/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Sydney</h2>
+
+            <!--DETAILS start-->
+            <div class="details">
+               <div class="col"><!--DETAIL 1-->
+                <img src="weatherpics/humidity.png">
+                <div>
+                 <p class="humidity">50%</p>
+                 <p>Humidity</p>
+               </div>
+                </div>
+
+                <div class="col"><!--DETAIL 2-->
+                <img src="weatherpics/wind.png">
+                <div>
+                 <p class="wind">15km/hr</p>
+                 <p>Wind speed</p>
+                 </div>
+                </div>
+            </div>
+            <!--DETAILS end-->
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
